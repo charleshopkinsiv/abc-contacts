@@ -1,0 +1,9 @@
+{
+    "name": "charles/abc-contacts",
+    "require": {},
+    "autoload": {
+        "psr-4":{
+            "Abc\\": "src/"
+        }
+    }
+}
