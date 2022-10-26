@@ -65,7 +65,8 @@ class ContactModel extends Model
 
         $sql = "INSERT INTO contacts 
                 SET first_name = '" . $data['first_name'] . "', 
-                    last_name = '" . $data['last_name'] . "',
+                    last_name = '" . $data['last_name'] . "', 
+                    middle_name = '" . $data['middle_name'] . "',
                     email = '" . $data['email'] . "',
                     prefix = '" . $data['prefix'] . "',
                     suffix = '" . $data['suffix'] . "',
@@ -87,6 +88,7 @@ class ContactModel extends Model
         $sql = "UPDATE contacts 
                 SET first_name = '" . $data['first_name'] . "', 
                     last_name = '" . $data['last_name'] . "',
+                    middle_name = '" . $data['middle_name'] . "',
                     email = '" . $data['email'] . "',
                     prefix = '" . $data['prefix'] . "',
                     suffix = '" . $data['suffix'] . "',
