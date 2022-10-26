@@ -24,7 +24,8 @@ $sql = "CREATE TABLE contacts (
             email VARCHAR(255) NOT NULL UNIQUE,
             prefix ENUM('Mr.','Mrs.','Ms.','Miss'),
             suffix ENUM('Jr.','Sr.','I','II','III'),
-            title VARCHAR(50) NOT NULL DEFAULT ''
+            title VARCHAR(50) NOT NULL DEFAULT '',
+            date_created DATETIME DEFAULT NOW()
         )";
 $db->query($sql)->execute();
 printf("contacts table created\n\n");

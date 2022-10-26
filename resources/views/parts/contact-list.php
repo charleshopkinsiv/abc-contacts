@@ -25,7 +25,7 @@
                 <td><?php echo $contact['suffix']; ?></td>
                 <td><?php echo $contact['number']; ?> : <?php echo $contact['type']; ?></td>
                 <td><?php echo $contact['email']; ?></td>
-                <td><?php echo $contact['first_name']; ?></td>
+                <td><?php echo $contact['date_created']; ?></td>
                 <td class="text-end">
                     <a href="/edit.php?edit_id=<?php echo $contact['id']; ?>" class="btn btn-secondary btn-sm"><i class="fas fa-edit"></i></a>
                     <button onclick="deleteContact(<?php echo $contact['id']; ?>)" class="btn btn-secondary btn-sm"><i class="fas fa-trash"></i></button>
