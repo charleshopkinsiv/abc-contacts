@@ -95,6 +95,7 @@ class ContactController
             'id',
             'first_name',
             'last_name',
+            'middle_name',
             'email',
             'prefix',
             'suffix',
